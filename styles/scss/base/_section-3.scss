@@ -1,0 +1,221 @@
+// block-3-start
+.conteiner-3{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.flex-3{
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: 1200px) {
+        justify-content: space-around;
+    }
+    @media screen and (max-width: 670px){
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+    @media screen and (max-width: 520px){
+        margin: 100px;
+    }
+    @media screen and (max-width: 400px){
+        margin: 40px;
+    }
+}
+.clients{
+    @media screen and (max-width: 670px){
+        margin: 30px;
+    }
+}
+.padding-3{
+    padding-top: 50px;
+    padding-bottom: 115px;
+    @media screen and (max-width: 520px){
+        padding-bottom: 0px;
+        padding-top: 0px;
+    }
+}
+.background-grey-3{
+    background: #f6f6f6;
+}
+.text-aline{
+    text-align: center;
+}
+.padding-3-text{
+    padding-top: 112px;
+    padding-bottom: 30px;
+}
+.text-orange{
+    color: #f8c212;
+}
+.input-text{
+    width: 295px;
+    height: 60px;
+    background: #fff;
+    color: #bbbbbb;
+    border: none;
+    outline: none;
+    &-large{
+        width: 950px;
+        height: 150px;
+        border: none;
+        outline: none;
+        @media screen and (max-width: 1080px) {
+            width: 500px;
+        }
+        @media screen and (max-width: 620px) {
+            width: 295px;
+        }
+    }
+}
+.text-3-bolt{
+    font-family: 'Poppins';
+    font-size: 36px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.text-3-description{
+    font-family: 'Poppins';
+    color: #9f9f9f;
+}
+.flex-3-center{
+    display: flex;
+    justify-content: center;
+}
+input{
+    padding: 0 20px;
+    &::placeholder{
+        color: #bbbbbb;
+    }
+    &:nth-child(4){
+        padding-bottom: 90px;
+    }
+}
+
+.margin-3{
+    margin: 0px 15px;
+    color: #bbbbbb;
+}
+.btn-3{
+    width: 470px;
+    height: 60px;
+    background: #ffae00;
+    border: none;
+    color: #fff;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    letter-spacing: 5px;
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    &:hover{
+        cursor: pointer;
+    }
+    @media screen and (max-width: 1080px){
+        margin-top: 100px;
+    }
+    @media screen and (max-width: 550px) {
+        width: 295px;
+    }
+
+}
+.form{
+    display: grid;
+    height: 370px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 60px 160px 60px;
+    grid-row-gap: 35px;
+    grid-column-gap: 30px;
+    grid-template-areas: 
+    "grid-1 grid-2 grid-3"
+    "grid-4 grid-4 grid-4"
+    "grid-5 grid-5 grid-5";
+    @media screen and (max-width: 1080px) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 60px 60px 60px 60px;
+        grid-template-areas: 
+        "grid-1 grid-2 grid-2"
+        "grid-3 grid-3 grid-3"
+        "grid-4 grid-4 grid-4"
+        "grid-5 grid-5 grid-5";
+    }
+    @media screen and (max-width: 620px){
+        grid-template-columns: 1fr ;
+        grid-template-areas: 
+        "grid-1 grid-1 grid-1"
+        "grid-2 grid-2 grid-2"
+        "grid-3 grid-3 grid-3"
+        "grid-4 grid-4 grid-4"
+        "grid-5 grid-5 grid-5";
+    }
+}
+.grid-1{
+ grid-area: grid-1;
+ @media screen and (max-width: 620px){
+    align-self: center;
+    justify-self: center;
+}
+}
+.grid-2{
+    grid-area: grid-2;
+    @media screen and (max-width: 620px){
+        align-self: center;
+        justify-self: center;
+    }
+}
+.grid-3{
+    grid-area: grid-3;
+    @media screen and (max-width: 1080px){
+        align-self: center;
+        justify-self: center;
+    }
+}
+.grid-4{
+    grid-area: grid-4;
+    @media screen and (max-width: 1080px){
+        margin-top: 85px;
+        align-self: center;
+        justify-self: center;
+    }
+}
+.grid-5{
+    grid-area: grid-5;
+}
+.form-main{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 175px;
+    @media screen and (max-width: 620px){
+        padding-bottom: 200px;
+    }
+}
+.padding-3-bottom{
+    padding-bottom: 30px;
+}
+.dark-color{
+    background: #1e1e1e;
+}
+.footer-flex{
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: 1200px) {
+        justify-content: space-around;
+    }
+    @media screen and (max-width: 480px) {
+        display: block;
+        text-align: center;
+    }
+}
+.text-footer{
+    font-family: 'Poppins';
+    font-size: 12px;
+    padding: 35px 0px;
+    color: #fff;
+}
+.social-links{
+    margin: 35px 10px;
+}
+// block-3-end
