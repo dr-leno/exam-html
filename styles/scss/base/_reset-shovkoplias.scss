@@ -1,0 +1,90 @@
+.font1{
+    font-size: 18px;
+    line-height: 28px;
+    color: #000000;
+    font-weight: 700;
+    font-family: "Open Sans";}  
+  .font2{
+    font-size: 14px;
+    line-height: 28px;
+    color: #666666;
+    font-weight: 400;
+    font-family: "Open Sans";}
+  .font3{
+    text-transform: uppercase;
+    font-size: 38px;
+    line-height: 30px;
+    color: #000000;
+    font-weight: 600;
+    font-family: "Poppins";
+    text-align: center;}
+.font4{
+    font-size: 18px;
+    line-height: 32px;
+    color: #252525;
+    font-weight: 400;
+    font-family: "Poppins";
+    text-align: center;}
+.font5{
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    font-weight: 600;
+    font-family: "Poppins";
+    text-align: center;}
+.font6{
+    font-size: 12px;
+    line-height: 24px;
+    color: #999999;
+    font-weight: 400;
+    font-family: "Poppins";
+    text-align: center;}
+    
+
+  .flex{display: flex;}
+  .flex h4{
+    margin-top: 50px;
+    margin-left: 26px;}
+  .flex p{
+    max-width: 349px;
+    margin-right: 70px;
+    margin-left: 26px;
+    margin-top: 26px;}
+  .rectangle{margin-top: 50px;}
+  
+  .intoduction{
+    display: flex;
+    margin-top: 226px;
+    justify-content: center;}
+  
+  .orange{color: #ffae00;}
+  
+  .intoduction h2{
+    font-size: 36px;
+    letter-spacing: 2px;
+    line-height: 50px;
+    color: #000000;
+    font-weight: 600;
+    font-family: "Poppins";}
+  
+  .intoduction h4{font-size: 18px;}
+  
+  .photo{
+    padding-top: 136px;
+    display: block;
+    margin: 0 auto;
+  }
+  .photo-block{
+    justify-content: center;
+    display: flex;   
+  }
+  .photo-block img{
+    width: 653px;
+    height: 645px;
+  }
+  .testimonials{
+    max-width: 804px;
+    margin: 0 auto;
+    margin-top: 162px;
+    background-image: url(); }
+.testimonials img{margin-left: 46%;}

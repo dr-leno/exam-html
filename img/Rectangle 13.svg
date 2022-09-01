@@ -1,0 +1,14 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37 3" width="37" height="3">
+	<title>Our Skill</title>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #000000 } 
+	</style>
+	<g id="Our Skill">
+		<g id="Text">
+			<g id="1">
+				<path id="Rectangle 13" class="shp0" d="M0 0L37 0L37 4L0 4L0 0Z" />
+			</g>
+		</g>
+	</g>
+</svg>
