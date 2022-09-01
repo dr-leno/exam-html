@@ -1,6 +1,6 @@
 $font:'Poppins', sans-serif;
 .container{
-    width: 1170px;
+    max-width: 1170px;
     margin: 0 auto;
 }
 body{
@@ -8,15 +8,20 @@ body{
 }
 
 .header{
-    padding: 50px 0;
+    width: 100%;
+    position: fixed;
+    padding: 50px 0 0;
     background-color: $bg-grey;
     &-wrap{
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
+    &__menu-btn{
+        display: none;
+    }
     &__navigation{
-        width: 368px;
+        width: 32%;
     }
     &__navigation__list{
         display: flex;
@@ -33,10 +38,11 @@ body{
 }
 .hero{
     background-color: $bg-grey;
-   
-    &-info{
-        padding: 310px 0;
-        background: url('../../img/kelvin-kramer.png') no-repeat right;
+    padding-top: 150px;
+    &-wrap{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
     h1{
         font-weight: 600;
@@ -67,4 +73,83 @@ body{
             font-size: 14px;
         }
     }
+}
+@media only screen and (max-width: 992px)  {
+    .container{
+        max-width: 750px;
+    }
+    .header{
+        &__navigation{
+            width: 50%;
+        }
+    } 
+}
+@media only screen and (max-width: 767px)  {
+    .container{
+        max-width: none;
+        padding: 0 20px;
+    }
+    .header{
+        &__menu-btn{
+            display: block;
+            width: 30px;
+	        height: 30px;
+	        position: relative;
+	        z-index:2;
+	        overflow: hidden;
+            span{
+                width: 30px;
+	            height: 2px;
+	            position: absolute;
+	            top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-color: #222222;
+                transition: all 0.5s;
+            }
+            span:nth-of-type(2) {
+                top: calc(50% - 5px);
+            }
+            span:nth-of-type(3) {
+                top: calc(50% + 5px);
+            }
+        }
+        &__navigation{
+            display: none;
+        }
+    }
+    .hero{
+        &-wrap{
+            flex-direction: column-reverse;
+           img{
+            width: 200px;
+            border-radius: 50%;
+        } 
+        }
+        h1, &__text{
+            text-align: center;
+        }
+        &-info{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }  
+    }
+    .services{
+        &-wrap{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .service{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+}
 }
