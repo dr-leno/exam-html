@@ -1,0 +1,70 @@
+$font:'Poppins', sans-serif;
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+body{
+    font-family: $font;
+}
+
+.header{
+    padding: 50px 0;
+    background-color: $bg-grey;
+    &-wrap{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__navigation{
+        width: 368px;
+    }
+    &__navigation__list{
+        display: flex;
+        justify-content: space-between;
+
+    }
+    &__navigation__link{
+        color: $black;
+        font-size: 14px;
+        &:hover{
+            color: $text-grey;
+        }
+    }
+}
+.hero{
+    background-color: $bg-grey;
+   
+    &-info{
+        padding: 310px 0;
+        background: url('../../img/kelvin-kramer.png') no-repeat right;
+    }
+    h1{
+        font-weight: 600;
+        font-size: 44px;
+    }
+    &__text{
+        margin-top: 33px;
+        font-size: 14px;
+    }
+}
+.services{
+    padding: 80px 0;
+    &-wrap{
+        display: flex;
+        justify-content: space-between;
+    }
+    .service{
+        width: calc(33% - 65px);
+        margin-right: 65px;
+        &__title{
+            margin-top: 30px;
+            font-size: 24px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        &__text{
+            margin-top: 21px;
+            font-size: 14px;
+        }
+    }
+}
